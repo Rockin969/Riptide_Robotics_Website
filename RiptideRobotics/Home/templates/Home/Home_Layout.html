@@ -1,0 +1,120 @@
+{% extends "Home/Home_Template.html" %}
+
+{% load static %}
+
+{% block body %}
+
+<div id="Section1"class="container-fluid">
+    <img id="Section1A" class="image-responsive" src="{% static '\img\Home_Image(Blank).png' %}">
+    <div id="Section1B" class="centered">
+        <h1>
+            Welcome To ______ Robotics
+        </h1>
+        <h3>Mission Statement</h3>
+    </div>
+</div>
+<div id="SectionBreak"></div>
+<div id="Section2" class="container-fluid">
+    <div class="col text-center">
+        <a href="{% url 'abt_index' %}">
+            <button id="Section2Button1" class="btn">About Us</button>
+        </a>
+    </div>
+</div>
+<div id="SectionBreak"></div>
+<div id="Section3">
+    <div id="SectionBreak"></div>
+    <div id="Section3A" class="container-fluid">
+        <div>
+            <h2>
+                There are many people and events critical to who we are
+            </h2>
+            <h4>
+                Learn about them!
+            </h4>
+        </div>
+    </div>
+    <div id="SectionBreak"></div>
+    <div id="Section3B" class="row">
+        <div id="Section3-Blank" class="col-lg-2 col-sm-1 col-xs-0"></div>
+        <div id="Instructors">
+            <div id="InstrcutorText" class="col-lg-3 col-sm-5 col-xs-6">
+                <div class="col text-center">
+                    <h2>
+                        Learn About Our Instructors
+                    </h2>
+                    <h4>
+                        This is what they're about
+                    </h4>
+                    <a href="{% url 'inst_index' %}">
+                        <button class="btn ">Instructors: Learn More</button>
+                    </a>
+                </div>
+            </div>
+            <div id="InstructorImage" class="col-lg-5 col-sm-5 col-xs-6">
+                <img id="InstructorImage" class="image-responsive" src="{% static '\img\Stand-In.jpg' %}"></div>
+            </div>
+        </div>
+        <div id="Section3-Blank" class="col-lg-2 col-sm-1 col-xs-0"></div>
+    </div>
+<div id="SectionBreak"></div>
+    <div id="Section3C"class="row">
+        <div id="Section3-Blank" class="col-lg-3 col-sm-1 col-xs-0"></div>
+        <div id="Instructors" class="col-lg-3 col-sm-5 col-xs-6">
+            <img id="FirstRoboticsImage" class="image-responsive" src="{% static '\img\Stand-In.jpg' %}">
+            <div id="FirstRoboticsText">
+                <h2>
+                    Learn About First Robotics
+                </h2>
+                <h4>
+                    Host of the Robotics Competion
+                </h4>
+                <div class="col text-center">
+                    <a href="https://www.firstinspires.org/about/vision-and-mission">
+                        <button class="btn">Here Is There Website</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="History" class="col-lg-3 col-sm-5 col-xs-6">
+            <img id="HistoryImage" class="image-responsive" src="{% static '\img\Stand-In.jpg' %}">
+            <div id="HistoryText">
+                <h2>
+                    Learn About Our Past Competitions
+                </h2>
+                <h4>
+                    See how FIRST Robotics Tournaments Work through our past
+                </h4>
+                <div class="col text-center">
+                    <a href="{% url 'years_index' %}">
+                        <button class="btn">View Our Past Competitions</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="Section3-Blank" class="col-lg-3 col-sm-1 col-xs-0"></div>
+    </div>
+</div>
+<div id="SectionBreak"></div>
+<div id="Section4">
+    <div id="Section4-Blank" class="container"></div>
+    <div id="NewMembers" class="container">
+    <div class="row">
+            <div class="col-lg-6, col-sm-6">
+                <h1>
+                    Do you want to Join?
+                </h1>
+                <h4>
+                    We welcome any student of ____ to join us at anytime, even during our build seasons. Please come to the autoshop anytime and see what we do for yourself!
+                </h4>
+            </div>
+            <div class="col-lg-6, col-sm-6">
+                <img id="" class="image-responsive" src="{% static '\img\Stand-In.jpg' %}">
+            </div>
+        </div>
+    </div>
+    <div id="SectionBreak"></div>
+</div>
+</div>
+
+{% endblock %}

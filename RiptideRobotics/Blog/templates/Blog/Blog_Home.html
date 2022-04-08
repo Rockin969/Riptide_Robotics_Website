@@ -1,0 +1,17 @@
+{% extends "Blog/Blog_Template.html" %}
+
+{% block body %}
+
+    <div id="break" class="container-fluid">
+    </div>
+    <div id="list" class="container">
+        <h1>Blogs: </h1>
+        <ul>
+            {% for blog in blogs %}
+                <li>
+                    <a id="listitem" class="btn-link" href="{% url 'blog' blog.id %}">Blog {{ blog.id }}</a>: Blog Post: {{ blog.subject }} 
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

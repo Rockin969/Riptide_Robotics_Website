@@ -1,0 +1,20 @@
+{% extends "Years/Years_Template.html" %}
+
+{% block body %}
+    
+    <div id="break" class="container-fluid">
+    </div> 
+    <div id="list" class="container">
+        <h1>Years:</h1>
+        <ul>
+            {% for year in years %}
+                <li>
+                    <a id="listitem" class="btn-link" href="{% url 'year' year.id %}">
+                        {{ year.season }}
+                    </a> Season
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}

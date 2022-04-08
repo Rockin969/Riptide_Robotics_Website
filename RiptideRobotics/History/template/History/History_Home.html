@@ -1,0 +1,10 @@
+{% extends "History/History_Template.html" %}
+
+{% block body %}
+    <h1>Years:</h1>
+    <ul>
+        {% for history in histories %}
+            <li>History {{ history.id }}: {{ history.years }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
